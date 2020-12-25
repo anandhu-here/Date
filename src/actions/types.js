@@ -1,0 +1,30 @@
+
+export const USER_LOADING = 'USER_LOADING';
+export const USER_LOADED = 'USER_LOADED';
+export const AUTH_ERROR = 'AUTH_ERROR';
+export const LOGIN_SUCCESS = 'LOGIN_SUCCESS';
+export const LOGIN_FAIL = 'LOGIN_FAIL';
+export const LOGOUT_SUCCESS = 'LOGOUT_SUCCESS';
+export const REGISTER_SUCCESS = 'REGISTER_SUCCESS';
+export const REGISTER_FAIL = 'REGISTER_FAIL';
+
+export const GET_HOME_PROFILES = "GET_HOME_PROFILES";
+
+export const GET_PROFILE = 'GET_PROFILE';
+
+export const PROFILE_LOADING = 'PROFILE_LOADING';
+
+export const POST_ADDED = "POST_ADDED";
+export const CLEAR_STATE = "CLEAR_STATE";
+
+export const OPEN_AUTH_OPT = "OPEN_AUTH_OPT"; 
+export const REG_BTN_CLICKED = "REG_BTN_CLICKED"; 
+
+export const CLOSE_AUTH_OPT = "CLOSE_AUTH_OPT"; 
+
+export const OTP_CREATED = "OTP_CREATED";
+export const OTP_VERIFIED = "OTP_VERIFIED";
+
+export const SELFIE_CLICKED = "SELFIE_CLICKED";
+
+export const PROFILE_CREATED = "PROFILE_CREATED";

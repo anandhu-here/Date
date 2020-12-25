@@ -1,0 +1,95 @@
+.profile_edit {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  z-index: 1000;
+  width: 50rem;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.9); }
+  @media (max-width: 596px) {
+    .profile_edit {
+      transform: translateY(10%);
+      left: 0;
+      right: 0;
+      top: 0;
+      bottom: 0;
+      margin: auto;
+      background-color: rgba(255, 255, 255, 0.95); } }
+  .profile_edit-title {
+    font-size: 4rem;
+    color: #e7cd06;
+    font-family: 'Nerko One', cursive;
+    margin: 5.4rem 0 1rem 0;
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    align-items: center; }
+    .profile_edit-title-close {
+      cursor: pointer;
+      margin-left: auto; }
+      .profile_edit-title-close:hover {
+        transform: translate(4rem, -5rem);
+        animation: italic 1s  infinite; }
+  .profile_edit-username {
+    width: 25rem;
+    height: 3rem;
+    margin-top: 5rem;
+    margin-bottom: 2rem; }
+    .profile_edit-username-input {
+      width: 100%;
+      height: 100%;
+      border-radius: 10rem;
+      text-align: center; }
+  .profile_edit-bio {
+    width: 25rem;
+    height: 3rem; }
+    .profile_edit-bio-input {
+      width: 100%;
+      height: 100%;
+      border-radius: 10rem; }
+  .profile_edit-submit {
+    margin-top: 2rem;
+    width: 20rem;
+    height: 3rem;
+    border-radius: 10rem;
+    font-family: 'Nerko One', cursive;
+    font-size: 2rem;
+    background-color: #e7cd06; }
+
+.profile_image_edit {
+  margin-top: 2.8rem;
+  width: 25rem;
+  height: 25rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center; }
+  .profile_image_edit-img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    object-fit: cover; }
+  .profile_image_edit input[type="file"] {
+    display: none; }
+  .profile_image_edit-input {
+    align-self: center;
+    width: 20rem;
+    height: 4.4rem;
+    font-size: 3rem;
+    border-radius: 10rem;
+    font-family: 'Nerko One', cursive;
+    background-color: #e7cd06;
+    cursor: pointer;
+    padding-top: 0.5rem; }
+    @media (max-width: 596px) {
+      .profile_image_edit-input {
+        width: 20rem;
+        height: auto; } }
+
+@keyframes closebtn {
+  0% {
+    transform: scale(1.5) rotate(0); }
+  50% {
+    transform: scale(1.5) rotate(12deg); }
+  100% {
+    transform: scale(1.5) rotate(0); } }

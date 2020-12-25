@@ -1,0 +1,55 @@
+@import url("https://fonts.googleapis.com/css2?family=Piazzolla:wght@600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Nerko+One&family=Piazzolla:wght@600&display=swap");
+.navbar {
+  position: absolute;
+  z-index: -1;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  font-family: 'Piazzolla', serif;
+  height: 10rem;
+  background-color: rgba(0, 0, 0, 0.658);
+  align-items: center;
+  top: 0;
+  bottom: 0; }
+  .navbar_left {
+    width: 30%;
+    margin-left: 10rem; }
+    .navbar_left_brand {
+      font-family: 'Nerko One', cursive;
+      word-spacing: 0.1px;
+      font-size: 5.7rem;
+      text-decoration: none;
+      font-weight: 800;
+      color: #66852c; }
+      @media (max-width: 596px) {
+        .navbar_left_brand {
+          width: 100%;
+          font-size: 4rem;
+          margin-left: 2rem; } }
+    @media (max-width: 596px) {
+      .navbar_left {
+        width: 100%; } }
+    @media (max-width: 768px) {
+      .navbar_left {
+        width: 100%;
+        margin-left: 1rem; } }
+  .navbar_right {
+    width: 20%; }
+    .navbar_right-auth {
+      width: 15rem;
+      height: 5.5rem;
+      border-radius: 1rem;
+      background-color: rgba(133, 172, 55, 0.734);
+      border: none;
+      outline: none;
+      text-align: center;
+      font-size: 3rem;
+      color: wheat;
+      cursor: pointer; }
+    @media (max-width: 596px) {
+      .navbar_right {
+        display: none; } }
+    @media (max-width: 768px) {
+      .navbar_right {
+        display: none; } }

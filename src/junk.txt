@@ -1,0 +1,19 @@
+#from navbar right 
+
+if(isAuth === true){
+            return(
+                <div className="navbar_right">
+                  
+                    
+                    <input onClick={this._handlelogout.bind(this)} type="submit" className="navbar_right_login" value="Logout"/>
+                </div>
+            )
+        }
+        else{
+
+            return (
+                <div className="navbar_right">
+                    <input onClick={this._handleLogin.bind(this)}  className="navbar_right_login" type="submit" value="Login" />
+                </div>
+            )
+        }

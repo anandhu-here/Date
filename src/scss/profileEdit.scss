@@ -1,0 +1,118 @@
+@import './var.scss';
+
+.profile_edit{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    z-index: 1000;
+    width: 50rem;
+    height: 100%;
+    background-color: rgba($color: #000000, $alpha: 0.9);
+    @include sm{
+        transform: translateY(10%);
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        margin: auto;
+        background-color: rgba($color: #ffffff, $alpha: 0.95);
+    }
+    &-title{
+        font-size: 4rem;
+        color: rgb(231, 205, 6);
+        font-family: 'Nerko One', cursive;
+        margin: 5.4rem 0 1rem 0;
+        display: flex;
+        flex-direction: column;
+        width: 90%;
+        align-items: center;
+        &-close{
+            cursor: pointer;
+            margin-left: auto;
+            
+            &:hover{
+                transform: translate(4rem, -5rem);
+                animation: italic 1s  infinite;
+            }
+        }
+    }
+    &-username{
+       width: 25rem;
+       height: 3rem;
+       margin-top: 5rem;
+       margin-bottom: 2rem;
+        &-input{
+            width: 100%;height: 100%;
+            border-radius: 10rem;
+            text-align: center;
+        }    
+    }
+    &-bio{
+        width: 25rem;height: 3rem;
+        &-input{
+            width: 100%;
+            height: 100%;
+            border-radius: 10rem;
+            
+        }
+    }
+    &-submit{
+        margin-top: 2rem;
+        width: 20rem;
+        height: 3rem;
+        border-radius: 10rem;
+        font-family:'Nerko One', cursive; 
+        font-size: 2rem;
+        background-color:  rgb(231, 205, 6);
+    }
+
+}
+.profile_image_edit{
+    margin-top: 2.8rem;
+    width: 25rem;
+    height: 25rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+    &-img{
+        width: 100%;
+        height: 100%;
+        border-radius: 50%;
+        object-fit: cover;
+    }
+    input[type="file"]{
+        display: none;
+    }
+    &-input{
+        
+        align-self: center;
+        width: 20rem;
+        height: 4.4rem;
+        font-size: 3rem;
+        border-radius: 10rem;
+        font-family: 'Nerko One', cursive;
+        background-color: rgb(231, 205, 6);
+        cursor: pointer;
+        padding-top: 0.5rem;
+        @include sm{
+            width: 20rem;
+            height: auto;
+            
+        }
+    }
+    
+}
+
+@keyframes closebtn {
+	0% {
+		transform: scale(1.5) rotate(0);
+	}
+	50% {
+		transform: scale(1.5) rotate(12deg);
+	}
+	100% {
+		transform: scale(1.5) rotate(0);
+	}
+}

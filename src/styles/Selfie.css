@@ -1,0 +1,148 @@
+.TakeSelfie {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; }
+  .TakeSelfie-btn {
+    height: 6rem;
+    margin-top: 2rem;
+    color: white;
+    background-color: #455c22;
+    padding: 1rem;
+    width: 20rem;
+    border-radius: 10rem; }
+    .TakeSelfie-btn:focus {
+      outline: none;
+      border: none; }
+
+.Selfie-container {
+  position: absolute;
+  animation-name: authOpta;
+  animation-duration: 0.15s;
+  top: 50%;
+  left: 50%;
+  width: 100%;
+  height: 120%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  flex-direction: column; }
+  .Selfie-container-close {
+    position: absolute;
+    margin-left: auto; }
+    .Selfie-container-close-icon {
+      font-size: 4rem; }
+  .Selfie-container video {
+    position: relative;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border: 3px solid white;
+    -webkit-transform: scaleX(-1);
+    transform: scaleX(-1); }
+  @media (max-width: 596px) {
+    .Selfie-container {
+      position: absolute;
+      z-index: 1000;
+      width: 100%;
+      height: 100%; } }
+  .Selfie-container-header {
+    width: 100%;
+    height: 6.5rem;
+    background-color: rgba(0, 0, 0, 0.5);
+    position: absolute;
+    z-index: 10000;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center; }
+    .Selfie-container-header-brand {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #96c859;
+      width: 35%;
+      height: 75%;
+      font-size: 3rem;
+      font-weight: 600;
+      margin-left: 3rem;
+      background-color: rgba(167, 165, 165, 0.229);
+      border-radius: 1.4rem; }
+    .Selfie-container-header-icon {
+      color: white;
+      font-size: 4rem;
+      border: 1px solid yellowgreen;
+      border-radius: 10rem;
+      margin-right: 2rem; }
+
+.video-div {
+  position: relative;
+  width: 100%;
+  height: 100%; }
+
+.captured-div {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; }
+  .captured-div img {
+    position: relative;
+    height: 80%;
+    width: 80%;
+    object-fit: cover;
+    -webkit-transform: scaleX(-1);
+    transform: scaleX(-1); }
+
+.captured-image-opt {
+  width: 50%;
+  height: 10rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center; }
+
+.retake-selfie {
+  width: 50%;
+  height: 50%;
+  margin-right: 0.5rem;
+  background-color: #455c22;
+  color: white;
+  font-weight: 600;
+  font-size: 2.2rem;
+  border-radius: 10rem;
+  outline: none;
+  border: none; }
+
+.upload-selfie {
+  width: 50%;
+  height: 50%;
+  margin-left: 0.5rem;
+  background-color: #455c22;
+  color: white;
+  font-weight: 600;
+  font-size: 2.2rem;
+  border-radius: 10rem;
+  outline: none;
+  border: none; }
+
+.capture-icon {
+  position: absolute;
+  font-size: 10rem;
+  color: white;
+  z-index: 1000;
+  top: 80%;
+  left: 40%;
+  border: 5px solid yellow;
+  border-radius: 10rem;
+  padding: 2rem;
+  cursor: pointer; }
+  .capture-icon:hover {
+    background-color: yellow;
+    color: black; }
+
+.Selfie_Video {
+  width: 100%;
+  height: 90%; }

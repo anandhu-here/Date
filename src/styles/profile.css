@@ -1,0 +1,169 @@
+.profile {
+  display: flex;
+  flex-direction: row;
+  width: 95%;
+  margin: 0 auto 0 auto;
+  padding-top: 10rem;
+  height: 100vh; }
+  @media (max-width: 596px) {
+    .profile {
+      flex-direction: column; } }
+  @media (max-width: 768px) {
+    .profile {
+      flex-direction: column; } }
+  .profile_container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    grid-template-rows: 2fr 1fr; }
+    @media (max-width: 596px) {
+      .profile_container {
+        height: 100vh; } }
+    @media (max-width: 768px) {
+      .profile_container {
+        height: 100vh; } }
+    .profile_container-config {
+      display: flex;
+      width: 25%;
+      justify-content: space-around;
+      margin-top: 1rem;
+      padding: 1rem; }
+    .profile_container_group {
+      width: 100%;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center; }
+      @media (max-width: 596px) {
+        .profile_container_group {
+          flex-direction: column; } }
+    .profile_container_edit {
+      font-size: 3.5rem;
+      color: #262727; }
+      .profile_container_edit-icon {
+        cursor: pointer; }
+        .profile_container_edit-icon:hover {
+          color: #3872a8;
+          animation: settings 5s cubic-bezier(0.36, 0.07, 0.57, 0.99) infinite; }
+      .profile_container_edit:hover::before {
+        border: none; }
+    .profile_container_add {
+      font-size: 3.5rem;
+      color: #242525; }
+      .profile_container_add-icon {
+        cursor: pointer; }
+        .profile_container_add-icon:hover {
+          color: #3872a8;
+          animation: italic 1s cubic-bezier(0.36, 0.07, 0.57, 0.99) infinite; }
+  .profile_image {
+    margin-top: 1rem;
+    width: 50%;
+    height: 100%;
+    align-self: center; }
+    @media (max-width: 596px) {
+      .profile_image {
+        width: 100%; } }
+    @media (max-width: 768px) {
+      .profile_image {
+        width: 80%; } }
+    .profile_image-img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover; }
+  .profile_username {
+    font-size: 3rem;
+    text-align: center;
+    margin: 0 3rem; }
+    @media (max-width: 596px) {
+      .profile_username {
+        margin-top: 1rem; } }
+  .profile_list {
+    display: flex;
+    font-size: 2rem;
+    justify-content: center;
+    display: none; }
+    .profile_list_followers {
+      margin-right: 1rem; }
+    .profile_list_following {
+      margin-left: 1rem; }
+  .profile_bio {
+    text-align: center;
+    font-size: 2rem;
+    color: #313131;
+    display: none; }
+  .profile_underline {
+    display: none;
+    width: 90%;
+    margin: 1rem auto;
+    border-bottom: 2px solid rgba(0, 0, 0, 0.3); }
+    @media (max-width: 596px) {
+      .profile_underline {
+        display: block; } }
+    @media (max-width: 768px) {
+      .profile_underline {
+        display: block; } }
+
+.post_container {
+  columns: 4;
+  column-gap: 1.4rem;
+  width: 100%;
+  margin: auto auto; }
+  @media (max-width: 596px) {
+    .post_container {
+      columns: 3; } }
+
+.post_item_img-div-img {
+  max-width: 100%;
+  border-radius: 8px;
+  box-shadow: 0 0 16px #333;
+  margin-bottom: 1rem;
+  transition: all 0.1s ease;
+  cursor: pointer; }
+  .post_item_img-div-img:hover {
+    box-shadow: 1rem 1rem 1rem #333; }
+
+@keyframes settings {
+  0% {
+    transform: scale(1.5) rotate(0); }
+  10% {
+    transform: scale(1.5) rotate(45deg); }
+  17% {
+    transform: scale(1.5) rotate(45deg); }
+  20% {
+    transform: scale(1.5) rotate(90deg); }
+  27% {
+    transform: scale(1.5) rotate(90deg); }
+  30% {
+    transform: scale(1.5) rotate(135deg); }
+  37% {
+    transform: scale(1.5) rotate(135deg); }
+  40% {
+    transform: scale(1.5) rotate(180deg); }
+  47% {
+    transform: scale(1.5) rotate(180deg); }
+  50% {
+    transform: scale(1.5) rotate(225deg); }
+  57% {
+    transform: scale(1.5) rotate(225deg); }
+  60% {
+    transform: scale(1.5) rotate(270deg); }
+  67% {
+    transform: scale(1.5) rotate(270deg); }
+  70% {
+    transform: scale(1.5) rotate(315deg); }
+  77% {
+    transform: scale(1.5) rotate(315deg); }
+  80% {
+    transform: scale(1.5) rotate(360deg); }
+  100% {
+    transform: scale(1.5) rotate(360deg); } }
+
+@keyframes italic {
+  0% {
+    transform: scale(1.5) rotate(0); }
+  50% {
+    transform: scale(1.5) rotate(12deg); }
+  100% {
+    transform: scale(1.5) rotate(0); } }

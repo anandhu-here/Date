@@ -1,0 +1,29 @@
+@import './var.scss';
+*,
+*::before,
+*::after{
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+    
+}
+
+html{
+    font-size: 62.5%;
+    @include sm{
+        font-size: 53%;
+    }
+    @include md{
+        font-size: 55%;
+    }
+    @include lg{
+        font-size: 58%;
+    }
+}
+body{
+    box-sizing: border-box;
+
+    margin: 0;
+    padding:0;
+    
+}

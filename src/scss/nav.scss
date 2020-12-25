@@ -1,0 +1,64 @@
+@import './var.scss';
+@import url('https://fonts.googleapis.com/css2?family=Piazzolla:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nerko+One&family=Piazzolla:wght@600&display=swap');
+.navbar{
+    position: absolute;
+    z-index: -1;
+    width: 100%;
+    display: flex;
+    justify-content: space-between; 
+    font-family: 'Piazzolla', serif;
+    height: 10rem;
+    background-color: rgba(0, 0, 0, 0.658);
+    align-items: center;
+    top: 0;
+    bottom: 0;
+  &_left{
+      width: 30%;
+      margin-left: 10rem;
+      
+    &_brand{
+      font-family: 'Nerko One', cursive;
+        word-spacing: 0.1px;
+        font-size: 5.7rem;
+        text-decoration: none;
+        font-weight: 800;
+        color: rgb(102, 133, 44);
+        @include sm{
+          width: 100%;
+          font-size: 4rem;
+          margin-left: 2rem;
+      }
+    }
+    @include sm{
+        width: 100%;
+    }
+
+    @include md{
+        width: 100%;
+        margin-left: 1rem;
+    }
+  }
+  &_right{
+      width: 20%;
+      &-auth{
+        width: 15rem;
+        height: 5.5rem;
+        border-radius: 1rem;
+        background-color: rgba(133, 172, 55, 0.734);
+        border: none;
+        outline: none;
+        text-align: center;
+        font-size: 3rem;
+        color: wheat;
+        cursor: pointer;
+      }
+      @include sm{
+          display: none;
+      }
+      @include md{
+        display: none;
+    }
+  }
+}
+
